@@ -1,0 +1,55 @@
+
+.left-navbar {
+    height: 100vh;
+}
+
+
+.left-navbar>ul>li{
+    list-style-type: none;
+}
+
+
+.link_main {
+    color: #fff;
+}
+
+
+.link_main:hover {
+    color: #d2d0d0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+
+.right-img{
+    height: 100% !important;
+}
+
+
+@media(max-width: 500px)
+{
+
+    h1{
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width: 800px)
+{
+
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 1000px)
+{
+    h1{
+        font-size: 37px;
+    }
+}
+
+
+

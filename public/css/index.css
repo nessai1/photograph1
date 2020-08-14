@@ -1,0 +1,50 @@
+
+
+
+.parent{
+    position:relative;
+    min-width:320px;
+}
+
+.image_op {
+
+    opacity: 0.5;
+}
+
+.parent img{
+    display:block;
+    width:100%;
+}
+
+.parent div{
+    position:absolute;
+    width:100%;
+    left:0;
+    top: 0;
+    color:#fff;
+    padding:10px 0;
+    text-align: center
+}
+
+
+
+
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.social_link {
+    color: #262626;
+}
+
+.social_link:hover {
+    color: #070707;
+    transition: 0.3s;
+}
+
+
+
