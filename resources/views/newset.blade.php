@@ -8,18 +8,17 @@
     <!-- Scripts -->
 
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/material-photo-gallery.min.js') }}" defer></script>
 
 
 
     <!-- Styles -->
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{asset('css/nava.css')}}" rel="stylesheet">
-    <link href="{{asset('css/album.css')}}" rel="stylesheet">
-    <link href="{{asset('css/carousel.css')}}" rel="stylesheet">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/index.css')}}" rel="stylesheet">
-    <link href="{{asset('css/about.css')}}" rel="stylesheet">
+    <link href="{{asset('css/material-photo-gallery.css')}}" rel="stylesheet">
+    <link href="{{asset('css/grid.css')}}" rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -53,18 +52,55 @@
                 </li>
             @endif
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="{{$inst}}"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link waves-effect waves-light" href="{{$vk}}"><i class="fa fa-instagram"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="{{$vk}}"><i class="fa fa-vk"></i></a>
+                <a class="nav-link waves-effect waves-light" href="{{$inst}}"><i class="fa fa-vk"></i></a>
             </li>
 
         </ul>
 
     </div>
 </nav>
-@yield('content')
 
+
+@if ($info->size > 1)
+
+<h1 class="text-center text-dark lib-b" style="color: #000 !important;">{{$info->title}}</h1>
+
+<p class="text-center text-dark lib-r" style="color: #000 !important;"><?php echo(nl2br($info->desc))?></p>
+@if($info->service != 'null')
+    <h5 class="text-center lib-r mt-3" style="color:#d7d7d7">{{$info->service}}</h5>
+@endif
+<div class="m-p-g">
+    <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+        @for ($i = 1; $i < $info->size+1; $i++)
+        <img src="{{$path.($i-1).".jpg"}}" data-full="{{$path.($i-1)."f.jpg"}}" class="m-p-g__thumbs-img" />
+        @endfor
+    </div>
+
+    <div class="m-p-g__fullscreen"></div>
+</div>
+
+<script>
+    var elem = document.querySelector('.m-p-g');
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var gallery = new MaterialPhotoGallery(elem);
+    });
+</script>
+@else
+    <div class="container">
+    <h1 class="text-center lib-b mt-5" style="color: #000 !important;">{{$info->title}}</h1>
+    @if($info->service != 'null')
+        <h5 class="text-center lib-r mt-3" style="color:#d7d7d7">{{$info->service}}</h5>
+    @endif
+    <div class="row m-5 shadow" style="margin-top:40px !important;">
+        <img src="{{$path.'0'."f.jpg"}}" class="img-fluid w-100 rounded" alt="">
+    </div>
+    <p class="text-center lib-r mt-3" style="color:#000; font-size: 20px"><?php echo(nl2br($info->desc)) ?></p>
+    </div>
+@endif
 <!-- Footer -->
 </body>
 </html>

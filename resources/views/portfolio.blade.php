@@ -20,7 +20,7 @@
                     <a href="portfolio/{{$set->id}}">
                         <div class="card mb-4 box-shadow">
                             <div class="card">
-                                <img class="card-img" src="{{$photopath.$set->id.'/0.jpg'}}" alt="Card image">
+                                <img class="card-img" src="{{$photopath.$set->id.'/0f.jpg'}}" alt="Card image">
                                 <div class="card-img-overlay  card_back" >
                                     <p class="card-text font-weight-bolder text-light lib-b">{{$set->title}}</p>
                                     <p class="card-text text-light lib-r">{{$set->desc}}</p>

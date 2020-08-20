@@ -26,9 +26,12 @@ class IndexController extends Controller
         if($request->hasFile('image'))
         {
             $image = $request->file('image');
-            \Image::make($image)->resize(1920, null, function ($constraint) {
+            \Image::make($image)->resize(null, 1200, function ($constraint) {
                 $constraint->aspectRatio();
             })->save(storage_path('app/public/images/mainpage.jpg'));
+            \Image::make($image)->resize(null, 1200, function ($constraint) {
+                $constraint->aspectRatio();
+            })->blur(50)->save(storage_path('app/public/images/mainpage_blur.jpg'));
         }
 
 

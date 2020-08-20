@@ -21,6 +21,19 @@
             font-family: "HVM";
         }
 
+
+        @media (max-width: 900px) {
+            body {
+                background: url("{{$image_blur}}") !important;
+            }
+
+            .main-navbar {
+                background: rgba(13, 13, 13, 0.5) !important;
+            }
+
+
+        }
+
         @media(max-width: 500px)
         {
 
@@ -38,13 +51,6 @@
             }
         }
 
-        @media(max-width: 1000px)
-        {
-            .main_text{
-                font-size: 37px;
-            }
-        }
-
         @media(min-width: 1001px)
         {
             .main_text{
@@ -56,23 +62,26 @@
     <title>hello</title>
     <script defer src="js/fa.js"></script>
 </head>
-<body>
+<body style="">
 <div class="row">
-
-    <div class="col-4 bg-dark left-navbar p-5" style="background: #131313 !important;">
+    <div class="col-4-m left-navbar p-5 main-navbar" style="background: #131313; height: 1200px !important;">
         <h1 class="text-center text-light main_text">{{$title}}</h1>
         <ul>
-            <li class="text-light mt-3"><a class="link_main" href="/portfolio">Portfolio</a></li>
-            <li class="text-light mt-2"><a class="link_main" href="/about">About me</a></li>
-            <li class="text-light mt-2"><a class="link_main" href="/services">Services</a></li>
+            <li class="text-light mt-3"><a class="effect-underline" href="/portfolio">Portfolio</a></li>
+            <li class="text-light mt-2"><a class="effect-underline" href="/about">About me</a></li>
+            <li class="text-light mt-2"><a class="effect-underline" href="/services">Services</a></li>
             <li class="text-light mt-2">
                 <a href="{{$inst}}" class="link_main"><i class="fab fa-instagram"></i></a>
                 <a href="{{$vk}}" class="link_main"><i class="ml-3 fab fa-vk"></i></a></li>
         </ul>
     </div>
-<div class="col-8 bg-dark" style="background: #131313 !important;">
+    <div  style="height: 200px;overflow:hidden;height:100%;" class="col-8-m">
+        <img src="{{$image}}" class="right-img" style="min-height: 100%; width: auto">
+    </div>
+<!-- <div class="col-8 bg-dark" style="background: #131313 !important;">
     <img src="{{$image}}" class="img-fluid right-img">
-</div>
+    <img style="height: 200px;margin:0 auto;" src="{{$image}}">
+</div> -->
 </div>
 </body>
 </html>

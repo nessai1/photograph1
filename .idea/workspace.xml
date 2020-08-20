@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1575e3c5-6c65-46b8-8ce5-97c9fcc07d73" name="Default Changelist" comment="" />
+    <list default="true" id="1575e3c5-6c65-46b8-8ce5-97c9fcc07d73" name="Default Changelist" comment="First init">
+      <change afterPath="$PROJECT_DIR$/public/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/newset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/atemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/atemplate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mainpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mainpage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/photoset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/photoset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +53,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -125,6 +164,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fQ1BxEWips1YlJknBXijwDEVqZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -188,11 +228,44 @@
       <workItem from="1597329590527" duration="14444000" />
       <workItem from="1597407411403" duration="456000" />
       <workItem from="1597420140940" duration="10076000" />
+      <workItem from="1597433557875" duration="994000" />
+      <workItem from="1597445193411" duration="686000" />
+      <workItem from="1597446153493" duration="2722000" />
+      <workItem from="1597662869585" duration="2956000" />
+      <workItem from="1597691810598" duration="310000" />
+      <workItem from="1597703462587" duration="2087000" />
+      <workItem from="1597749945742" duration="7492000" />
+      <workItem from="1597927333776" duration="4681000" />
+      <workItem from="1597938730912" duration="1621000" />
     </task>
+    <task id="LOCAL-00001" summary="First init">
+      <created>1597433950625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597433950625</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First init" />
+    <option name="LAST_COMMIT_MESSAGE" value="First init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597245310385">
@@ -208,6 +281,14 @@
       <screen x="72" y="27" width="1842" height="897" />
     </state>
     <state x="1021" y="207" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1842.897@72.27.1842.897" timestamp="1596135666316" />
+    <state x="583" y="380" width="695" height="207" key="Github.ShareDialog" timestamp="1597433638071">
+      <screen x="72" y="27" width="1846" height="901" />
+    </state>
+    <state x="583" y="380" width="695" height="207" key="Github.ShareDialog/72.27.1846.901@72.27.1846.901" timestamp="1597433638071" />
+    <state x="662" y="164" width="655" height="633" key="Github.UntrackedFilesDialog" timestamp="1597433650350">
+      <screen x="72" y="27" width="1846" height="901" />
+    </state>
+    <state x="662" y="164" width="655" height="633" key="Github.UntrackedFilesDialog/72.27.1846.901@72.27.1846.901" timestamp="1597433650350" />
     <state width="1240" height="275" key="GridCell.Tab.0.bottom" timestamp="1597245755455">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -240,16 +321,24 @@
       <screen x="72" y="27" width="1842" height="897" />
     </state>
     <state x="485" y="110" width="1022" height="737" key="SettingsEditor/72.27.1842.897@72.27.1842.897" timestamp="1596135455304" />
+    <state x="590" y="213" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597433952504">
+      <screen x="72" y="27" width="1846" height="901" />
+    </state>
+    <state x="590" y="213" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1846.901@72.27.1846.901" timestamp="1597433952504" />
+    <state x="776" y="392" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597433808299">
+      <screen x="72" y="27" width="1846" height="901" />
+    </state>
+    <state x="776" y="392" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1846.901@72.27.1846.901" timestamp="1597433808299" />
     <state x="660" y="246" key="run.anything.popup" timestamp="1596715499481">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="659" y="214" key="run.anything.popup/72.27.1846.901@72.27.1846.901" timestamp="1596275955782" />
     <state x="660" y="246" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596715499481" />
-    <state x="658" y="254" width="675" height="798" key="search.everywhere.popup" timestamp="1597425622778">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="657" y="221" width="674" height="682" key="search.everywhere.popup" timestamp="1597939851909">
+      <screen x="72" y="27" width="1846" height="901" />
     </state>
     <state x="656" y="220" width="672" height="678" key="search.everywhere.popup/72.27.1842.897@72.27.1842.897" timestamp="1596139893062" />
-    <state x="657" y="221" width="674" height="682" key="search.everywhere.popup/72.27.1846.901@72.27.1846.901" timestamp="1596736128330" />
+    <state x="657" y="221" width="674" height="682" key="search.everywhere.popup/72.27.1846.901@72.27.1846.901" timestamp="1597939851909" />
     <state x="658" y="254" width="675" height="798" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1597425622778" />
   </component>
   <component name="XDebuggerManager">

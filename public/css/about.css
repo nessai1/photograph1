@@ -1,0 +1,43 @@
+
+
+@media (max-width: 760px) {
+    .comment_text {
+        margin-top: -180px !important;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 760px) {
+    .comment_text {
+        margin-left: 40px;
+    }
+}
+
+
+
+
+@-moz-document url-prefix() {
+
+
+    @media (max-width: 760px) {
+        .comment_text {
+            margin-top: -150px !important;
+            margin-left: 100px !important;
+            padding: 40px !important;
+        }
+
+    }
+    @media(max-width: 900px) {
+        .firefox-text-title {
+            font-size: 15px;
+        }
+        .firefox-text-paragraph {
+            font-size: 10px !important;
+        }
+        .firefox-text-date {
+            font-size: 10px !important;
+        }
+
+    }
+
+}

@@ -36,10 +36,13 @@ Route::prefix('apanel')->middleware('auth')->group(function () {
     Route::get('/newservice','Admin\ServiceController@index');
     Route::get('/newfeedback','Admin\FeedbackController@index');
 
+
+
+
     Route::get('/deletefb/{id}','Admin\FeedbackController@delete');
     Route::get('/deleteserv/{id}', 'Admin\ServiceController@delete');
     Route::get('/deletepost/{id}', 'Admin\PostController@delete');
-    
+
 
 
     Route::post('/saveabout', 'Admin\AboutController@saveabout');

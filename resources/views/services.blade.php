@@ -4,7 +4,14 @@
 @section('content')
 <div class="container">
 
-
+    @if (!count($services))
+        <div class="row">
+            <h1 style="color: #d7d6d6; font-size: 40px">There is nothing :(</h1>
+        </div>
+        <div class="row ml-3">
+            <p style="color: #d7d6d6; font-size: 20px">Coming here late!</p>
+        </div>
+    @endif
     @foreach($services as $service)
         <h2 class="featurette-heading mb-5">{{$service->title}}
             @if($service->price != 'null')
@@ -13,10 +20,10 @@
         </h2>
         <div class="row mb-5">
             @if($service->photo)
-            <div class="col-4">
+            <div class="col-4-sv">
                 <img src="{{$service->photolink}}" class="img-fluid w-100" alt="">
             </div>
-            <div class="col-7">
+            <div class="col-7-sv">
                 <p class="lead"><?php echo(nl2br($service->maintext))?></p>
             </div>
             @else
@@ -25,7 +32,7 @@
                 </div>
             @endif
         </div>
-        <p class="lead text-muted">{{$service->secondtext}}</p>
+        <p class="lead text-muted"><?php echo(nl2br($service->secondtext))?></p>
         <hr class="featurette-divider">
     @endforeach
 

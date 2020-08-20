@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-sm-8">
                             <dl class="dl-horizontal">
-                                <dt class="col-sm-3 lib-r">E-Mail</dt>
+                                <dt class="col-sm-3 lib-r">Mail</dt>
                                 <dd class="col-sm-9 lib-r">{{$email}}</dd>
                             </dl>
                         </div>
@@ -37,46 +37,14 @@
 
             </div>
 
-            <!--
-            <div class="col-sm-4">
-                <img src="photo.jpg" class="img-fluid rounded-circle h-75 ml-lg-5" alt="avatar image">
-            </div>
-            <div class="col-sm-8 mt-5">
-                <h1>ОБО МНЕ</h1>
-                <h4>
-                    Рада приветствовать Вас на моем сайте! Меня зовут Ольга, я занимаюсь любимым делом - я фотограф!
-                    С детства я увлекалась изобразительным искусством, закончила художественную школу.
-                </h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-            <dl class="dl-horizontal">
-                <dt class="col-sm-3">E-Mail</dt>
-                <dd class="col-sm-9">werowkin@gmail.com</dd>
-            </dl>
-            </div>
-            <div class="col-sm-4">
-                <dl class="dl-horizontal">
-                    <dt class="col-sm-3">Social</dt>
-                    <dd class="col-sm-9">
-                                <a class="waves-effect waves-light"><i class="fa fa-instagram"></i></a>
-                                <a class="waves-effect waves-light ml-3"><i class="fa fa-vk"></i></a>
-                    </dd>
-                </dl>
-            </div>
-            <div class="col-sm-4">
-                <dt class="col-sm-5">Phone number</dt>
-                <dd class="col-sm-9">+79998887766</dd>
-            </div>
-            -->
+
 
 
         </div>
     </div>
-    <div class="row col-sm-12 bg-dark" style="background: #131313 !important;">
+    <div class="row mt-3" style="">
         <div class="col-sm-5"></div>
-        <h2 class="text-light pt-3 pb-3">Feedback</h2>
+        <h2 class="text-dark p-3" style="text-decoration: underline; color:#000 !important;">Feedback</h2>
     </div>
 
         @if (!count($feedbacks))
@@ -93,19 +61,19 @@
                 <div class="col-sm-3">
                     <img src="{{$feedback->photolink}}" class="img-fluid rounded-circle h-50 ml-5 mt-lg-3" alt="avatar image">
                 </div>
-                <div class="col-sm-8 mt-4">
-                    <h2>{{$feedback->title}}
+                <div class="col-sm-8 mt-4 comment_text">
+                    <h2 class="firefox-text-title">{{$feedback->title}}
                         @if($feedback->service)
                             <span class="badge badge-primary">{{$feedback->service}}</span>
                         @endif
                     </h2>
-                    <p style="font-size: 20px">
+                    <p style="font-size: 20px" class="firefox-text-paragraph">
                         <?php echo(nl2br($feedback->maintext))?>
                     </p>
-                    <p class="font-weight-light text-secondary">{{$feedback->date}}</p>
+                    <p class="font-weight-light text-secondary firefox-text-date">{{$feedback->date}}</p>
                 </div>
             </div>
-            <hr class="featurette-divider mt-n4">
+            <!-- <hr class="featurette-divider mt-n4"> -->
         @endforeach
     </div>
     </div>

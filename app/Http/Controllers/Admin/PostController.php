@@ -56,11 +56,12 @@ class PostController extends Controller
         foreach ($photos as $photo)
         {
             $path = $folderpath.$i;
-            $path .= '.jpg';
+            //$path .= '.jpg';
 
-            \Image::make($photo)->resize(600,null,function ($constraint) {
+            \Image::make($photo)->resize(null,350,function ($constraint) {
                $constraint->aspectRatio();
-            })->save(storage_path($path));
+            })->save(storage_path($path.'.jpg'));
+            \Image::make($photo)->save(storage_path($path.'f.jpg'));
             $i++;
         }
 
