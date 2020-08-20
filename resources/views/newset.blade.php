@@ -20,7 +20,7 @@
     <link href="{{asset('css/material-photo-gallery.css')}}" rel="stylesheet">
     <link href="{{asset('css/grid.css')}}" rel="stylesheet">
 
-    <title>Document</title>
+    <title>{{$sitename}}</title>
 </head>
 <body>
 <nav class="mb-4 navbar navbar-expand-lg navbar-dark bg-dark" style="background: #131313 !important; font-family: 'Nunito', sans-serif !important;">

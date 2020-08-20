@@ -21,7 +21,7 @@
     <link href="{{asset('css/index.css')}}" rel="stylesheet">
     <link href="{{asset('css/about.css')}}" rel="stylesheet">
 
-    <title>Document</title>
+    <title>{{$sitename}}</title>
 </head>
 <body>
 <nav class="mb-4 navbar navbar-expand-lg navbar-dark bg-dark" style="background: #131313 !important; font-family: 'Nunito', sans-serif !important;">
@@ -47,7 +47,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apanel</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown06">
-                        <a class="dropdown-item" href="apanel">Admin panel</a>
+                        <a class="dropdown-item" href="/apanel">Admin panel</a>
                         <a class="dropdown-item" href="/logout">Log out</a>
                     </div>
                 </li>

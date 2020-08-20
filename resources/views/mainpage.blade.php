@@ -59,7 +59,7 @@
         }
 
     </style>
-    <title>hello</title>
+    <title>{{$sitename}}</title>
     <script defer src="js/fa.js"></script>
 </head>
 <body style="">
